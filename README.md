@@ -1,0 +1,5 @@
+This is a super-low-effort script to remove all items in a Plex playlist AFTER the specified item. There's no batch "move item from playlist X to Y" feature from what I can see, so here we are. Since it seems super easy to (cough) (cough) screw up a playlist within Plexamp, I'm putting this On the Online in case you screw up too.
+
+1. Specify the environment variables `PLEX_SERVER`, `PLEX_TOKEN`, `PLEX_PLAYLIST`, `PLEX_STOP_AT`. `PLEX_PLAYLIST` is the title of the playlist `PLEX_STOP_AT` is a song title and *inclusive*, i.e. this song will be kept in the playlist.
+2. Clone and run the script, i.e. `git clone https://github.com/... && pip install -r lrconfusion/requirements.txt && python -m lrconfusion`
+3. Double check the number it spits out and then enter `y` to remove. You might need to make a couple of requests if your server (like mine) runs on an Atomic Toaster.
